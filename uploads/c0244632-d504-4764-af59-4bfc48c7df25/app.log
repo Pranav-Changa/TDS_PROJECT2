@@ -1,0 +1,21 @@
+2025-08-13 12:12:58,486 [INFO] Step-1: Folder created: uploads/c0244632-d504-4764-af59-4bfc48c7df25
+2025-08-13 12:12:58,489 [INFO] Step-2: File sent {'questions (2).txt': 'uploads/c0244632-d504-4764-af59-4bfc48c7df25/questions (2).txt', 'sample-sales (1).csv': 'uploads/c0244632-d504-4764-af59-4bfc48c7df25/sample-sales (1).csv'}
+2025-08-13 12:12:58,489 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-13 12:13:09,623 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-13 12:13:10,055 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-13 12:13:10,055 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-13 12:13:27,727 [INFO] Step-5: Response from llm: os.path.join(output_dir, "result.json") # Ensure the directory exists os.makedirs(output_dir, exist_ok=True) # Save the result to a JSON file with open(output_file, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:13:27,728 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-13 12:13:28,442 [INFO] Step-6: Executing final code result: in run_python_code execute_code() ~~~~~~~~~~~~^^ File "/Users/pranavchanga/TDS_project2/task_engine.py", line 22, in execute_code exec(code, exec_globals) ~~~~^^^^^^^^^^^^^^^^^^^^ File "<string>", line 9, in <module> NameError: name 'df' is not defined
+2025-08-13 12:13:28,442 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-13 12:13:28,442 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-13 12:13:45,713 [INFO] Step-5: Response from llm: # Save the result to a JSON file output_dir = "uploads/c0244632-d504-4764-af59-4bfc48c7df25" os.makedirs(output_dir, exist_ok=True) output_path = os.path.join(output_dir, "result.json") with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:13:46,502 [INFO] Step-6: Executing final code result: File "/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 180, in default raise TypeError(f'Object of type {o.__class__.__name__} ' f'is not JSON serializable') TypeError: Object of type int64 is not JSON serializable
+2025-08-13 12:13:46,503 [ERROR] Step-6: Error occured while executing code. Tries count = 3
+2025-08-13 12:13:46,503 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-13 12:13:55,324 [INFO] Step-5: Response from llm: median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the result to a JSON file output_path = "uploads/c0244632-d504-4764-af59-4bfc48c7df25/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:13:56,442 [INFO] Step-6: Executing final code result: run_python_code execute_code() ~~~~~~~~~~~~^^ File "/Users/pranavchanga/TDS_project2/task_engine.py", line 22, in execute_code exec(code, exec_globals) ~~~~^^^^^^^^^^^^^^^^^^^^ File "<string>", line 49, in <module> AttributeError: 'float' object has no attribute 'item'
+2025-08-13 12:13:56,442 [ERROR] Step-6: Error occured while executing code. Tries count = 4
+2025-08-13 12:13:56,442 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-13 12:14:11,449 [INFO] Step-5: Response from llm: median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the result to a JSON file output_path = "uploads/c0244632-d504-4764-af59-4bfc48c7df25/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:14:12,413 [INFO] Step-6: Executing final code result: File "/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 180, in default raise TypeError(f'Object of type {o.__class__.__name__} ' f'is not JSON serializable') TypeError: Object of type int64 is not JSON serializable

@@ -1,0 +1,1 @@
+Error: Could not find the main film grossing table on the Wikipedia page.

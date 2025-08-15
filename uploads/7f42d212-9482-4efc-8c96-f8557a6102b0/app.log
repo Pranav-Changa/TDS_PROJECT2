@@ -1,0 +1,18 @@
+2025-08-12 15:49:44,710 [INFO] Step-1: Folder created: uploads/7f42d212-9482-4efc-8c96-f8557a6102b0
+2025-08-12 15:49:44,713 [INFO] Step-2: File sent {'questions (2).txt': 'uploads/7f42d212-9482-4efc-8c96-f8557a6102b0/questions (2).txt', 'sample-sales (1).csv': 'uploads/7f42d212-9482-4efc-8c96-f8557a6102b0/sample-sales (1).csv'}
+2025-08-12 15:49:44,714 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:49:51,417 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 15:49:51,880 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:49:51,880 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:50:01,949 [INFO] Step-5: Response from llm: median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the result to a JSON file output_path = "uploads/7f42d212-9482-4efc-8c96-f8557a6102b0/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 15:50:01,951 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:50:02,680 [INFO] Step-6: Executing final code result: in run_python_code execute_code() ~~~~~~~~~~~~^^ File "/Users/pranavchanga/TDS_project2/task_engine.py", line 22, in execute_code exec(code, exec_globals) ~~~~^^^^^^^^^^^^^^^^^^^^ File "<string>", line 16, in <module> NameError: name 'df' is not defined
+2025-08-12 15:50:02,680 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-12 15:50:02,680 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:50:15,073 [INFO] Step-5: Response from llm: total_sales, "top_region": top_region, "day_sales_correlation": day_sales_correlation, "bar_chart": bar_chart_base64, "median_sales": median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } output_path = "uploads/7f42d212-9482-4efc-8c96-f8557a6102b0/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 15:50:15,861 [INFO] Step-6: Executing final code result: File "/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 180, in default raise TypeError(f'Object of type {o.__class__.__name__} ' f'is not JSON serializable') TypeError: Object of type int64 is not JSON serializable
+2025-08-12 15:50:15,861 [ERROR] Step-6: Error occured while executing code. Tries count = 3
+2025-08-12 15:50:15,861 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:50:30,729 [INFO] Step-5: Response from llm: float(median_sales), "total_sales_tax": float(total_sales_tax), "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the result to a JSON file output_path = "uploads/7f42d212-9482-4efc-8c96-f8557a6102b0/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 15:50:31,541 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:50:31,541 [INFO] Step-7: send result back

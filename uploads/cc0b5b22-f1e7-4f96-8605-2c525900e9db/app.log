@@ -1,0 +1,13 @@
+2025-08-12 21:12:01,761 [INFO] Step-1: Folder created: uploads/cc0b5b22-f1e7-4f96-8605-2c525900e9db
+2025-08-12 21:12:01,782 [INFO] Step-2: File sent {'questions (2).txt': 'uploads/cc0b5b22-f1e7-4f96-8605-2c525900e9db/questions (2).txt', 'questions.txt': 'uploads/cc0b5b22-f1e7-4f96-8605-2c525900e9db/questions.txt'}
+2025-08-12 21:12:01,783 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 21:12:35,849 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 21:12:36,318 [INFO] Step-4: Execution result of the scrape code: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'sample-sales.csv'
+2025-08-12 21:12:36,318 [ERROR] Step-4: Error occured while scrapping. Tries count = 0
+2025-08-12 21:13:30,208 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 21:13:33,532 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 21:13:33,532 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 21:13:55,946 [INFO] Step-5: Response from llm: plt.savefig(line_chart_buffer, format='png', bbox_inches='tight', dpi=100) line_chart_buffer.seek(0) result['cumulative_sales_chart'] = base64.b64encode(line_chart_buffer.read()).decode('utf-8') plt.close(fig_line) except FileNotFoundError: pass except Exception as e: pass with open(output_file_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 21:13:55,946 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 21:13:56,560 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 21:13:56,561 [INFO] Step-7: send result back

@@ -1,0 +1,39 @@
+--- Data from sample-sales.csv ---
+Description: Expected sales data file 'sample-sales.csv' not found at uploads/cc0b5b22-f1e7-4f96-8605-2c525900e9db/sample-sales.csv. This file is crucial for sales analysis. Skipping processing.
+
+Expected JSON Answer Format for sales analysis:
+{
+  "total_sales": "number",
+  "top_region": "string",
+  "day_sales_correlation": "number",
+  "bar_chart": "base64 PNG string under 100kB",
+  "median_sales": "number",
+  "total_sales_tax": "number",
+  "cumulative_sales_chart": "base64 PNG string under 100kB"
+}
+
+--- Data from questions.txt ---
+Description: Text file containing user questions or related information. This file was part of the 'Uploaded files'.
+
+Content Head (first 200 chars):
+Analyze `sample-sales.csv`.
+
+Return a JSON object with keys:
+- `total_sales`: number
+- `top_region`: string
+- `day_sales_correlation`: number
+- `bar_chart`: base64 PNG string under 100kB
+- `median_sal...
+
+--- Data from questions (2).txt ---
+Description: Another text file containing user questions or related information. This file was part of the 'Uploaded files'.
+
+Content Head (first 200 chars):
+Analyze `sample-sales.csv`.
+
+Return a JSON object with keys:
+- `total_sales`: number
+- `top_region`: string
+- `day_sales_correlation`: number
+- `bar_chart`: base64 PNG string under 100kB
+- `median_sal...

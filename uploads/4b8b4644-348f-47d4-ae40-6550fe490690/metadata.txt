@@ -1,0 +1,41 @@
+### DataFrame Info ###
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 50 entries, 0 to 49
+Data columns (total 6 columns):
+ #   Column  Non-Null Count  Dtype 
+---  ------  --------------  ----- 
+ 0   Rank    50 non-null     int64 
+ 1   Peak    50 non-null     object
+ 2   Title   50 non-null     object
+ 3   Peak    50 non-null     int64 
+ 4   Year    50 non-null     int64 
+ 5   Ref     50 non-null     object
+dtypes: int64(3), object(3)
+memory usage: 2.5+ KB
+
+
+### DataFrame Columns ###
+
+['Rank', 'Peak', 'Title', 'Peak', 'Year', 'Ref']
+
+
+### DataFrame Head ###
+
+   Rank  Peak                     Title        Peak  Year          Ref
+0     1     1                    Avatar  2923706026  2009   [# 1][# 2]
+1     2     1         Avengers: Endgame  2797501328  2019   [# 3][# 4]
+2     3     3  Avatar: The Way of Water  2320250281  2022   [# 5][# 6]
+3     4     1                   Titanic  2257844554  1997   [# 7][# 8]
+4     5     5                  Ne Zha 2  2212300000  2025  [# 9][# 10]
+
+
+### Data File Path ###
+
+Path: uploads/4b8b4644-348f-47d4-ae40-6550fe490690/data.csv
+Description: Scraped highest-grossing films data.
+
+
+### Expected JSON Answer Format ###
+
+JSON array of strings, e.g., ["Answer to Q1", "Answer to Q2", "Answer to Q3", "data:image/png;base64,iVBORw0..."]

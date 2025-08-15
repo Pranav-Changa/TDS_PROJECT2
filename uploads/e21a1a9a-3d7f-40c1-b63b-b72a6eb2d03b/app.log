@@ -1,0 +1,10 @@
+2025-08-12 15:37:44,856 [INFO] Step-1: Folder created: uploads/e21a1a9a-3d7f-40c1-b63b-b72a6eb2d03b
+2025-08-12 15:37:44,859 [INFO] Step-2: File sent {'edges.csv': 'uploads/e21a1a9a-3d7f-40c1-b63b-b72a6eb2d03b/edges.csv', 'questions (1).txt': 'uploads/e21a1a9a-3d7f-40c1-b63b-b72a6eb2d03b/questions (1).txt'}
+2025-08-12 15:37:44,859 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:38:04,973 [INFO] Step-3: Response from scrapping: in the prompt, so it will be empty)\nif not os.path.exists(questions_txt_path):\n with open(questions_txt_path, \'w\') as f:\n pass # Create an empty file\n', 'libraries': ['pandas'], 'questions': ['source,target\nAlice,Bob\nAlice,Carol\nBob,Carol\nBob,David\nBob,Eve\nCarol,David\nDavid,Eve\n']}
+2025-08-12 15:38:05,420 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:38:05,420 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:38:18,650 [INFO] Step-5: Response from llm: } # Define the output path output_path = "uploads/e21a1a9a-3d7f-40c1-b63b-b72a6eb2d03b/result.json" # Save the result to a JSON file with open(output_path, 'w') as f: json.dump(analysis_result, f, indent=4)
+2025-08-12 15:38:18,651 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:38:19,458 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:38:19,458 [INFO] Step-7: send result back

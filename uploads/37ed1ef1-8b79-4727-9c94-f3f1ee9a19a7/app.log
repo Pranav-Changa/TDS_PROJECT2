@@ -1,0 +1,21 @@
+2025-08-13 12:11:49,689 [INFO] Step-1: Folder created: uploads/37ed1ef1-8b79-4727-9c94-f3f1ee9a19a7
+2025-08-13 12:11:49,795 [INFO] Step-2: File sent {'questions (2).txt': 'uploads/37ed1ef1-8b79-4727-9c94-f3f1ee9a19a7/questions (2).txt', 'sample-sales (1).csv': 'uploads/37ed1ef1-8b79-4727-9c94-f3f1ee9a19a7/sample-sales (1).csv'}
+2025-08-13 12:11:49,796 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-13 12:11:56,878 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-13 12:11:57,445 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-13 12:11:57,445 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-13 12:12:04,331 [INFO] Step-5: Response from llm: median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the result to a JSON file output_path = "uploads/37ed1ef1-8b79-4727-9c94-f3f1ee9a19a7/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:12:04,331 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-13 12:12:05,055 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-13 12:12:05,055 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-13 12:12:05,056 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-13 12:12:11,917 [INFO] Step-5: Response from llm: median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the result to a JSON file output_path = "uploads/37ed1ef1-8b79-4727-9c94-f3f1ee9a19a7/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:12:12,537 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-13 12:12:12,537 [ERROR] Step-6: Error occured while executing code. Tries count = 3
+2025-08-13 12:12:12,537 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-13 12:12:23,044 [INFO] Step-5: Response from llm: median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the result to a JSON file output_file_path = 'uploads/37ed1ef1-8b79-4727-9c94-f3f1ee9a19a7/result.json' with open(output_file_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:12:23,804 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-13 12:12:23,804 [ERROR] Step-6: Error occured while executing code. Tries count = 4
+2025-08-13 12:12:23,804 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-13 12:12:38,623 [INFO] Step-5: Response from llm: total_sales, "top_region": top_region, "day_sales_correlation": day_sales_correlation, "bar_chart": bar_chart_base64, "median_sales": median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_chart_base64 } output_path = "uploads/37ed1ef1-8b79-4727-9c94-f3f1ee9a19a7/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-13 12:12:39,290 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'

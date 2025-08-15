@@ -1,0 +1,10 @@
+2025-08-12 15:48:00,812 [INFO] Step-1: Folder created: uploads/def2daa1-b56b-4e6a-bdc3-9db422a8b54c
+2025-08-12 15:48:00,817 [INFO] Step-2: File sent {'questions.txt': 'uploads/def2daa1-b56b-4e6a-bdc3-9db422a8b54c/questions.txt', 'sample-sales.csv': 'uploads/def2daa1-b56b-4e6a-bdc3-9db422a8b54c/sample-sales.csv'}
+2025-08-12 15:48:00,817 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:48:15,863 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 15:48:16,308 [INFO] Step-4: Execution result of the scrape code: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'sample-sales.csv'
+2025-08-12 15:48:16,308 [ERROR] Step-4: Error occured while scrapping. Tries count = 0
+2025-08-12 15:48:22,930 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 15:48:23,348 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:48:23,348 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:48:30,914 [ERROR] Step-5: Error: Invalid \escape: line 2 column 887 (char 888)

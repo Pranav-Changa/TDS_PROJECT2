@@ -1,0 +1,6 @@
+{
+    "question_1": "Could not answer: How many $2 bn movies were released before 2000? - Data for film grossing table not found as per metadata.",
+    "question_2": "Could not answer: Which is the earliest film that grossed over $1.5 bn? - Data for film grossing table not found as per metadata.",
+    "question_3": "Could not answer: What's the correlation between the Rank and Peak? - Data for film grossing table not found as per metadata.",
+    "question_4": "Could not generate scatterplot: Data for film grossing table not found as per metadata."
+}

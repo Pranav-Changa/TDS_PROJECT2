@@ -1,0 +1,10 @@
+2025-08-12 15:34:02,585 [INFO] Step-1: Folder created: uploads/faa09608-5a7b-4273-9ca7-f2b761feee1e
+2025-08-12 15:34:02,592 [INFO] Step-2: File sent {'questions.txt': 'uploads/faa09608-5a7b-4273-9ca7-f2b761feee1e/questions.txt'}
+2025-08-12 15:34:02,592 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:34:15,679 [INFO] Step-3: Response from scrapping: scatterplot of Rank and Peak along with a dotted red regression line through it. Return as a base-64 encoded data URI, "data:image/png;base64,iVBORw0..." under 100,000 bytes.']}
+2025-08-12 15:34:31,816 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:34:31,816 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:34:44,440 [INFO] Step-5: Response from llm: grossing table not found as per metadata." } output_dir = "uploads/faa09608-5a7b-4273-9ca7-f2b761feee1e" os.makedirs(output_dir, exist_ok=True) output_path = os.path.join(output_dir, "result.json") with open(output_path, 'w') as f: json.dump(results, f, indent=4)
+2025-08-12 15:34:44,440 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:34:44,441 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:34:44,442 [INFO] Step-7: send result back

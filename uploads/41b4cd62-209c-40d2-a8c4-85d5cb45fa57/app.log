@@ -1,0 +1,14 @@
+2025-08-12 21:14:43,349 [INFO] Step-1: Folder created: uploads/41b4cd62-209c-40d2-a8c4-85d5cb45fa57
+2025-08-12 21:14:43,351 [INFO] Step-2: File sent {'questions (2).txt': 'uploads/41b4cd62-209c-40d2-a8c4-85d5cb45fa57/questions (2).txt', 'sample-sales (1).csv': 'uploads/41b4cd62-209c-40d2-a8c4-85d5cb45fa57/sample-sales (1).csv'}
+2025-08-12 21:14:43,352 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 21:14:50,331 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 21:14:50,768 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 21:14:50,768 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 21:15:03,016 [INFO] Step-5: Response from llm: total_sales, "top_region": top_region, "day_sales_correlation": day_sales_correlation, "bar_chart": bar_chart_base64, "median_sales": median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } output_path = "uploads/41b4cd62-209c-40d2-a8c4-85d5cb45fa57/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 21:15:03,017 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 21:15:03,826 [INFO] Step-6: Executing final code result: File "/opt/homebrew/Cellar/python@3.13/3.13.3_1/Frameworks/Python.framework/Versions/3.13/lib/python3.13/json/encoder.py", line 180, in default raise TypeError(f'Object of type {o.__class__.__name__} ' f'is not JSON serializable') TypeError: Object of type int64 is not JSON serializable
+2025-08-12 21:15:03,826 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-12 21:15:03,826 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 21:15:16,398 [INFO] Step-5: Response from llm: int(median_sales), "total_sales_tax": float(total_sales_tax), "cumulative_sales_chart": cumulative_sales_chart_base64 } # Save the results to a JSON file output_file_path = "uploads/41b4cd62-209c-40d2-a8c4-85d5cb45fa57/result.json" with open(output_file_path, 'w') as f: json.dump(results, f, indent=2)
+2025-08-12 21:15:17,123 [INFO] Step-6: Executing final code result: ✅ Code executed successfully after installing libraries.
+2025-08-12 21:15:17,123 [INFO] Step-7: send result back

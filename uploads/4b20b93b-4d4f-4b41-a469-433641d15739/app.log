@@ -1,0 +1,9 @@
+2025-08-12 14:59:50,007 [INFO] Step-1: Folder created: uploads/4b20b93b-4d4f-4b41-a469-433641d15739
+2025-08-12 14:59:50,010 [INFO] Step-2: File sent {'questions.txt': 'uploads/4b20b93b-4d4f-4b41-a469-433641d15739/questions.txt'}
+2025-08-12 14:59:50,010 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 14:59:50,438 [ERROR] Step-3: Error in parsing the result. "API_KEY_INVALID" domain: "googleapis.com" metadata { key: "service" value: "generativelanguage.googleapis.com" } , locale: "en-US" message: "API key not valid. Please pass a valid API key." ]
+2025-08-12 14:59:50,438 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 1
+2025-08-12 14:59:51,750 [ERROR] Step-3: Error in parsing the result. "API_KEY_INVALID" domain: "googleapis.com" metadata { key: "service" value: "generativelanguage.googleapis.com" } , locale: "en-US" message: "API key not valid. Please pass a valid API key." ]
+2025-08-12 14:59:51,750 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 2
+2025-08-12 14:59:52,802 [ERROR] Step-3: Error in parsing the result. "API_KEY_INVALID" domain: "googleapis.com" metadata { key: "service" value: "generativelanguage.googleapis.com" } , locale: "en-US" message: "API key not valid. Please pass a valid API key." ]
+2025-08-12 14:59:52,802 [ERROR] Error: Could not get valid response from LLM after retries.

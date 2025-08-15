@@ -1,0 +1,24 @@
+2025-08-12 15:42:13,240 [INFO] Step-1: Folder created: uploads/55635953-1a26-4f8b-b1a1-9dc86cb5fd05
+2025-08-12 15:42:13,246 [INFO] Step-2: File sent {'questions.txt': 'uploads/55635953-1a26-4f8b-b1a1-9dc86cb5fd05/questions.txt', 'sample-sales.csv': 'uploads/55635953-1a26-4f8b-b1a1-9dc86cb5fd05/sample-sales.csv'}
+2025-08-12 15:42:13,246 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:42:18,337 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 15:42:18,804 [INFO] Step-4: Execution result of the scrape code: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'sample-sales.csv'
+2025-08-12 15:42:18,804 [ERROR] Step-4: Error occured while scrapping. Tries count = 0
+2025-08-12 15:42:27,770 [INFO] Step-3: Response from scrapping: sales tax if the tax rate is 10%?', 'Plot cumulative sales over time as a line chart with a red line. Encode as base64 PNG.']}
+2025-08-12 15:42:28,212 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:42:28,212 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:42:38,905 [INFO] Step-5: Response from llm: output_dir = "uploads/55635953-1a26-4f8b-b1a1-9dc86cb5fd05" os.makedirs(output_dir, exist_ok=True) output_path = os.path.join(output_dir, "result.json") # Save the result to a JSON file with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 15:42:38,905 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:42:42,928 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:42:42,928 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-12 15:42:42,929 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:42:55,005 [INFO] Step-5: Response from llm: total_sales, "top_region": top_region, "day_sales_correlation": day_sales_correlation, "bar_chart": bar_chart_encoded, "median_sales": median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_encoded } output_path = "uploads/55635953-1a26-4f8b-b1a1-9dc86cb5fd05/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 15:42:55,727 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:42:55,727 [ERROR] Step-6: Error occured while executing code. Tries count = 3
+2025-08-12 15:42:55,727 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:43:08,604 [INFO] Step-5: Response from llm: total_sales, "top_region": top_region, "day_sales_correlation": day_sales_correlation, "bar_chart": bar_chart_base64, "median_sales": median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } output_path = "uploads/55635953-1a26-4f8b-b1a1-9dc86cb5fd05/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 15:43:09,345 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:43:09,345 [ERROR] Step-6: Error occured while executing code. Tries count = 4
+2025-08-12 15:43:09,345 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:43:25,868 [INFO] Step-5: Response from llm: bar_chart_base64, "median_sales": median_sales, "total_sales_tax": total_sales_tax, "cumulative_sales_chart": cumulative_sales_chart_base64 } output_dir = "uploads/55635953-1a26-4f8b-b1a1-9dc86cb5fd05" output_file = os.path.join(output_dir, "result.json") os.makedirs(output_dir, exist_ok=True) with open(output_file, 'w') as f: json.dump(result, f, indent=2)
+2025-08-12 15:43:26,605 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'

@@ -1,0 +1,33 @@
+{
+    "num_nodes": 5,
+    "num_edges": 7,
+    "nodes": [
+        "Alice",
+        "Bob",
+        "Carol",
+        "David",
+        "Eve"
+    ],
+    "node_degrees": {
+        "Alice": {
+            "in_degree": 0,
+            "out_degree": 2
+        },
+        "Bob": {
+            "in_degree": 1,
+            "out_degree": 3
+        },
+        "Carol": {
+            "in_degree": 2,
+            "out_degree": 1
+        },
+        "David": {
+            "in_degree": 2,
+            "out_degree": 1
+        },
+        "Eve": {
+            "in_degree": 2,
+            "out_degree": 0
+        }
+    }
+}

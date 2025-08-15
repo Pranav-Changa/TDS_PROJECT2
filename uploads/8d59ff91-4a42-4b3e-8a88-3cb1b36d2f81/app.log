@@ -1,0 +1,24 @@
+2025-08-12 15:38:54,540 [INFO] Step-1: Folder created: uploads/8d59ff91-4a42-4b3e-8a88-3cb1b36d2f81
+2025-08-12 15:38:54,543 [INFO] Step-2: File sent {'edges.csv': 'uploads/8d59ff91-4a42-4b3e-8a88-3cb1b36d2f81/edges.csv', 'questions (1).txt': 'uploads/8d59ff91-4a42-4b3e-8a88-3cb1b36d2f81/questions (1).txt'}
+2025-08-12 15:38:54,543 [INFO] Step-3: Getting scrap code and metadata from llm. Tries count = 0
+2025-08-12 15:39:10,580 [INFO] Step-3: Response from scrapping: DataFrame Head ---")\nmetadata_content.append(str(df.head().to_string()))\n\n# Write metadata to metadata.txt\nwith open(metadata_path, \'w\') as f:\n f.write("\\n".join(metadata_content))\n', 'libraries': ['pandas'], 'questions': ['Collect data from uploaded files (edges.csv) and generate relevant metadata.']}
+2025-08-12 15:39:11,020 [INFO] Step-4: Execution result of the scrape code: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'uploads/8d59ff91-4a42-4b3e-a888-3cb1b36d2f81/edges.csv'
+2025-08-12 15:39:11,021 [ERROR] Step-4: Error occured while scrapping. Tries count = 0
+2025-08-12 15:39:44,964 [INFO] Step-3: Response from scrapping: 'Question' field?", "What is the content of the 'questions (1).txt' file?", "What is the context of the FileNotFoundError for 'edges.csv' mentioned in the user's input?"]}
+2025-08-12 15:39:45,380 [INFO] Step-4: Execution result of the scrape code: ✅ Code executed successfully after installing libraries.
+2025-08-12 15:39:45,380 [INFO] Step-5: Getting execution code from llm. Tries count = 0
+2025-08-12 15:40:08,655 [INFO] Step-5: Response from llm: highest_degree_node, "average_degree": round(average_degree, 2), "density": round(density, 3), "shortest_path_alice_eve": shortest_path_alice_eve, "network_graph": network_graph_base64, "degree_histogram": degree_histogram_base64 } output_path = "uploads/8d59ff91-4a42-4b3e-8a88-3cb1b36d2f81/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=4)
+2025-08-12 15:40:08,657 [INFO] Step-6: Executing final code. Tries count = 0
+2025-08-12 15:40:09,674 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:40:09,674 [ERROR] Step-6: Error occured while executing code. Tries count = 2
+2025-08-12 15:40:09,674 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:40:35,160 [INFO] Step-5: Response from llm: Create the directory if it doesn't exist os.makedirs(output_dir, exist_ok=True) # Save the result to a JSON file with open(output_filepath, 'w') as f: json.dump(result, f, indent=4)
+2025-08-12 15:40:36,147 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:40:36,147 [ERROR] Step-6: Error occured while executing code. Tries count = 3
+2025-08-12 15:40:36,147 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:40:58,266 [INFO] Step-5: Response from llm: shortest_path_alice_eve, "network_graph": network_graph_base64, "degree_histogram": degree_histogram_base64 } # Save the result to a JSON file output_file_path = "uploads/8d59ff91-4a42-4b3e-8a88-3cb1b36d2f81/result.json" with open(output_file_path, 'w') as f: json.dump(result, f, indent=4)
+2025-08-12 15:40:59,292 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
+2025-08-12 15:40:59,292 [ERROR] Step-6: Error occured while executing code. Tries count = 4
+2025-08-12 15:40:59,293 [INFO] Step-5: Getting execution code from llm. Tries count = 1
+2025-08-12 15:41:14,493 [INFO] Step-5: Response from llm: degree_histogram_base64 } # Save the result to a JSON file output_path = "uploads/8d59ff91-4a42-4b3e-8a88-3cb1b36d2f81/result.json" with open(output_path, 'w') as f: json.dump(result, f, indent=4) print(f"Results saved to {output_path}")
+2025-08-12 15:41:15,404 [INFO] Step-6: Executing final code result: ) ^ File "/Users/pranavchanga/venv/lib/python3.13/site-packages/pandas/io/common.py", line 873, in get_handle handle = open( handle, ...<3 lines>... newline="", ) FileNotFoundError: [Errno 2] No such file or directory: 'data.csv'
